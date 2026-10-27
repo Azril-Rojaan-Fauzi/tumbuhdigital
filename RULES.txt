@@ -1,0 +1,27 @@
+1. Follow a Consistent Folder Structure
+Each file must be placed in a folder that corresponds to its function. Do not store all your code in `app/` or place all components into a single folder without clear organization.
+
+
+2. Separate Components by Responsibility
+
+Reusable UI components must be placed in components/. Page-specific components should be grouped by feature or page when appropriate. Avoid creating one large component that handles multiple unrelated responsibilities.
+
+
+3. Separate Business Logic from UI
+
+Keep UI components focused on rendering and user interaction. Move reusable business logic, data fetching, validation, and complex state management into appropriate hooks, services, or utility functions.
+
+
+4. Keep Next.js App Router Conventions
+
+Use app/ for routes, layouts, loading states, error boundaries, and route-specific pages. Do not move route-defining files such as page.tsx, layout.tsx, or route.ts into arbitrary folders.
+
+
+5. Use Feature-Based Organization When Appropriate
+
+For larger features, group related components, hooks, schemas, and services by feature instead of placing every file of the same type in one enormous folder.
+
+
+6. Follow TypeScript and Code Quality Standards
+
+Use TypeScript, meaningful names, explicit types where useful, and reusable functions. Avoid any, duplicated code, unnecessary abstractions, and excessively long files.
