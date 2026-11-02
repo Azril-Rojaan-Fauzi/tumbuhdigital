@@ -95,9 +95,9 @@ export function HeroSection() {
                   <Zap className="w-5 h-5 fill-emerald-600" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-slate-900 leading-tight">
+                  <p className="text-xs font-bold text-slate-900 leading-tight">
                     Respon WA &lt; 15 Menit
-                  </h4>
+                  </p>
                   <p className="text-[11px] text-slate-500 mt-0.5">
                     Layanan aktif setiap hari
                   </p>
@@ -110,9 +110,9 @@ export function HeroSection() {
                   <ShieldCheck className="w-5 h-5 text-blue-600" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-slate-900 leading-tight">
+                  <p className="text-xs font-bold text-slate-900 leading-tight">
                     Garansi Transparan
-                  </h4>
+                  </p>
                   <p className="text-[11px] text-slate-500 mt-0.5">
                     Kontrak fleksibel tanpa denda
                   </p>
@@ -125,9 +125,9 @@ export function HeroSection() {
                   <Users className="w-5 h-5 text-purple-600" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-slate-900 leading-tight">
+                  <p className="text-xs font-bold text-slate-900 leading-tight">
                     450+ UMKM Terbantu
-                  </h4>
+                  </p>
                   <p className="text-[11px] text-slate-500 mt-0.5">
                     Di 28 Kota se-Indonesia
                   </p>

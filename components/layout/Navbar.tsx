@@ -33,7 +33,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Nav Links */}
-        <nav className="hidden lg:flex items-center gap-7">
+        <nav aria-label="Navigasi Utama" className="hidden lg:flex items-center gap-7">
           {NAVIGATION_LINKS.map((link) => (
             <a
               key={link.href}
@@ -85,16 +85,18 @@ export function Navbar() {
       {/* Mobile Nav Menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden bg-white border-b border-slate-200 px-4 py-4 space-y-3 shadow-lg animate-in fade-in slide-in-from-top-2 duration-200">
-          {NAVIGATION_LINKS.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={() => setMobileMenuOpen(false)}
-              className="block py-2 text-base font-semibold text-slate-700 hover:text-blue-600 border-b border-slate-100 last:border-0"
-            >
-              {link.label}
-            </a>
-          ))}
+          <nav aria-label="Navigasi Mobile">
+            {NAVIGATION_LINKS.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className="block py-2 text-base font-semibold text-slate-700 hover:text-blue-600 border-b border-slate-100 last:border-0"
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
           <div className="pt-2">
             <Button
               asLink

@@ -20,11 +20,13 @@ export function FaqAccordion() {
             <button
               onClick={() => toggleItem(item.id)}
               aria-expanded={open}
+              aria-controls={`faq-answer-${item.id}`}
+              id={`faq-btn-${item.id}`}
               className="w-full px-6 py-4.5 text-left flex items-center justify-between gap-4 hover:bg-slate-50/70 transition-colors cursor-pointer"
             >
-              <span className="font-bold text-sm sm:text-base text-slate-900 leading-snug">
+              <h3 className="font-bold text-sm sm:text-base text-slate-900 leading-snug">
                 {item.question}
-              </span>
+              </h3>
               <div
                 className={`w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 text-slate-500 transition-transform duration-200 ${
                   open ? "rotate-180 bg-blue-50 text-blue-600" : ""
@@ -35,7 +37,12 @@ export function FaqAccordion() {
             </button>
 
             {open && (
-              <div className="px-6 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-slate-50/40 animate-in fade-in duration-200">
+              <div
+                id={`faq-answer-${item.id}`}
+                role="region"
+                aria-labelledby={`faq-btn-${item.id}`}
+                className="px-6 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 bg-slate-50/40 animate-in fade-in duration-200"
+              >
                 <p>{item.answer}</p>
               </div>
             )}

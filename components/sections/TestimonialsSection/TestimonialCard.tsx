@@ -38,9 +38,9 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
         </div>
         <div>
           <div className="flex items-center gap-1.5">
-            <h4 className="text-sm font-extrabold text-slate-900 leading-tight">
+            <h3 className="text-sm font-extrabold text-slate-900 leading-tight">
               {testimonial.name}
-            </h4>
+            </h3>
             <CheckCircle2 className="w-3.5 h-3.5 text-blue-600 fill-blue-50" />
           </div>
           <p className="text-xs text-slate-500 mt-0.5">
